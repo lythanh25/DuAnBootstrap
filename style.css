@@ -20,3 +20,12 @@
   background-size: cover;
   background-position: center;
 }
+
+.copyright {
+  background-color: black;
+}
+
+.blur-filter {
+  background-color: #cccccc6c;
+  backdrop-filter: blur(8px);
+}
