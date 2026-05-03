@@ -58,7 +58,7 @@
               <a class="nav-link" aria-current="page" href="./faq.html">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./blog.html"
+              <a class="nav-link" aria-current="page" href="./blog.html"
                 >Blog</a
               >
             </li>
@@ -135,8 +135,8 @@
       </div>
     </nav>
 
-    <!-- blog header -->
-    <header class="blog-header py-5 border-bottom">
+    <!-- single post header -->
+    <header class="single-post-header py-5 border-bottom">
       <div class="container">
         <div class="row align-items-center gx-md-5">
           <div class="col-md-6">
@@ -144,374 +144,106 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               alias nulla minus sunt similique
             </h1>
+            <p class="d-inline-flex align-items-center">
+              <span
+                class="bg-dark text-white rounded-pill px-2 py-1 small me-2 badge"
+              >
+                <strong>Posted on:</strong>
+                <span class="fw-light">2nd Aug 2025</span>
+              </span>
+              <span
+                class="bg-dark text-white rounded-pill px-2 py-1 small me-2 badge"
+              >
+                <strong>Category:</strong>
+                <span class="fw-light">Tech</span>
+              </span>
+              <span
+                class="bg-dark text-white rounded-pill px-2 py-1 small me-2 badge"
+              >
+                <strong>Author:</strong>
+                <span class="fw-light">My project</span>
+              </span>
+            </p>
             <p class="fs-5 fw-light text-secondary">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Consectetur, debitis mollitia laudantium tenetur, tempora
               obcaecati provident voluptatum
             </p>
-            <div>
-              <a
-                href="#"
-                class="btn btn-success btn-sm d-inline-flex align-items-center"
-                data-bs-toggle="modal"
-                data-bs-target="#subscribe_modal"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-envelope-check-fill me-2"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"
-                  ></path>
-                  <path
-                    d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"
-                  ></path>
-                </svg>
-                Sign-up to newsletters
-              </a>
-            </div>
           </div>
-          <div class="col-md-6 mt-3 mt-md-0">
-            <img
-              src="./img/main-header.jpg"
-              alt="Blog header"
-              class="w-100 rounded"
-            />
+
+          <div class="col-md-6">
+            <img src="./img/main-header.jpg" alt="" class="w-100 rounded" />
           </div>
         </div>
       </div>
     </header>
 
-    <!-- subscribe modal -->
-    <div
-      class="modal fade"
-      id="subscribe_modal"
-      tabindex="-1"
-      aria-labelledby="subscribe_modal"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      aria-hidden="true"
-      style="display: none"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header bg-dark text-white">
-            <h5 class="modal-title">Subscribe to newsletters</h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="row gx-2">
-                <div class="col-md-6">
-                  <div class="mb-2">
-                    <input
-                      type="text"
-                      class="form-control form-control-sm"
-                      placeholder="First Name"
-                      required=""
-                    />
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="mb-2">
-                    <input
-                      type="text"
-                      class="form-control form-control-sm"
-                      placeholder="Last Name"
-                      required=""
-                    />
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="mb-2">
-                    <input
-                      type="email"
-                      class="form-control form-control-sm"
-                      placeholder="Your Email"
-                      required=""
-                    />
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="d-grid mb-2">
-                    <button
-                      type="submit"
-                      class="btn btn-sm btn-success d-inline-flex align-items-center justify-content-center"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-envelope-check-fill me-2"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"
-                        ></path>
-                        <path
-                          d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"
-                        ></path>
-                      </svg>
-                      Subscribe
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- blog content -->
-    <section class="blog-content py-5">
+    <!-- single content -->
+    <section class="single-post-content py-5">
       <div class="container">
         <div class="row">
           <div class="col-md-9">
-            <div class="list-group small">
-              <div
-                class="list-group-item bg-light fw-bold d-flex justify-content-between align-items-center"
-              >
-                List of blog posts
-                <span class="badge bg-warning rounded-pill text-dark"
-                  >24 posts Available</span
-                >
-              </div>
-              <!-- item 1 -->
-              <a
-                href="single-post.html"
-                class="list-group-item list-group-item-action"
-              >
-                <div class="row align-items-center g-3">
-                  <div class="col-md-4">
-                    <img
-                      src="./img/main-header.jpg"
-                      alt=""
-                      class="w-100 rounded"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <h5>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    </h5>
-                    <p class="text-secondary">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Consequuntur esse aperiam iusto ut voluptatem fuga,
-                      voluptates distinctio laboriosam error
-                    </p>
-                    <p class="d-inline-flex align-items-center">
-                      <span
-                        class="bg-dark text-white rounded-pill px-2 py-1 small me-2 badge"
-                      >
-                        <strong>Posted on:</strong>
-                        <span class="fw-light">2nd Aug 2025</span>
-                      </span>
-                      <span
-                        class="bg-dark text-white rounded-pill px-2 py-1 small me-2 badge"
-                      >
-                        <strong>Category:</strong>
-                        <span class="fw-light">Tech</span>
-                      </span>
-                      <span
-                        class="bg-dark text-white rounded-pill px-2 py-1 small me-2 badge"
-                      >
-                        <strong>Author:</strong>
-                        <span class="fw-light">My project</span>
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </a>
-              <!-- item 2 -->
-              <a
-                href="single-post.html"
-                class="list-group-item list-group-item-action"
-              >
-                <div class="row align-items-center g-3">
-                  <div class="col-md-4">
-                    <img
-                      src="./img/main-header.jpg"
-                      alt=""
-                      class="w-100 rounded"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <h5>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    </h5>
-                    <p class="text-secondary">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Consequuntur esse aperiam iusto ut voluptatem fuga,
-                      voluptates distinctio laboriosam error
-                    </p>
-                    <p class="d-inline-flex align-items-center">
-                      <span
-                        class="bg-dark text-white rounded-pill px-2 py-1 small me-2 badge"
-                      >
-                        <strong>Posted on:</strong>
-                        <span class="fw-light">2nd Aug 2025</span>
-                      </span>
-                      <span
-                        class="bg-dark text-white rounded-pill px-2 py-1 small me-2 badge"
-                      >
-                        <strong>Category:</strong>
-                        <span class="fw-light">Tech</span>
-                      </span>
-                      <span
-                        class="bg-dark text-white rounded-pill px-2 py-1 small me-2 badge"
-                      >
-                        <strong>Author:</strong>
-                        <span class="fw-light">My project</span>
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </a>
-              <!-- item 3 -->
-              <a
-                href="single-post.html"
-                class="list-group-item list-group-item-action"
-              >
-                <div class="row align-items-center g-3">
-                  <div class="col-md-4">
-                    <img
-                      src="./img/main-header.jpg"
-                      alt=""
-                      class="w-100 rounded"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <h5>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    </h5>
-                    <p class="text-secondary">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Consequuntur esse aperiam iusto ut voluptatem fuga,
-                      voluptates distinctio laboriosam error
-                    </p>
-                    <p class="d-inline-flex align-items-center">
-                      <span
-                        class="bg-dark text-white rounded-pill px-2 py-1 small me-2 badge"
-                      >
-                        <strong>Posted on:</strong>
-                        <span class="fw-light">2nd Aug 2025</span>
-                      </span>
-                      <span
-                        class="bg-dark text-white rounded-pill px-2 py-1 small me-2 badge"
-                      >
-                        <strong>Category:</strong>
-                        <span class="fw-light">Tech</span>
-                      </span>
-                      <span
-                        class="bg-dark text-white rounded-pill px-2 py-1 small me-2 badge"
-                      >
-                        <strong>Author:</strong>
-                        <span class="fw-light">My project</span>
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </a>
-              <!-- item 4 -->
-              <a
-                href="single-post.html"
-                class="list-group-item list-group-item-action"
-              >
-                <div class="row align-items-center g-3">
-                  <div class="col-md-4">
-                    <img
-                      src="./img/main-header.jpg"
-                      alt=""
-                      class="w-100 rounded"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <h5>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    </h5>
-                    <p class="text-secondary">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Consequuntur esse aperiam iusto ut voluptatem fuga,
-                      voluptates distinctio laboriosam error
-                    </p>
-                    <p class="d-inline-flex align-items-center">
-                      <span
-                        class="bg-dark text-white rounded-pill px-2 py-1 small me-2 badge"
-                      >
-                        <strong>Posted on:</strong>
-                        <span class="fw-light">2nd Aug 2025</span>
-                      </span>
-                      <span
-                        class="bg-dark text-white rounded-pill px-2 py-1 small me-2 badge"
-                      >
-                        <strong>Category:</strong>
-                        <span class="fw-light">Tech</span>
-                      </span>
-                      <span
-                        class="bg-dark text-white rounded-pill px-2 py-1 small me-2 badge"
-                      >
-                        <strong>Author:</strong>
-                        <span class="fw-light">My project</span>
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </a>
-              <!-- item 5 -->
-              <a
-                href="single-post.html"
-                class="list-group-item list-group-item-action"
-              >
-                <div class="row align-items-center g-3">
-                  <div class="col-md-4">
-                    <img
-                      src="./img/main-header.jpg"
-                      alt=""
-                      class="w-100 rounded"
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <h5>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    </h5>
-                    <p class="text-secondary">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Consequuntur esse aperiam iusto ut voluptatem fuga,
-                      voluptates distinctio laboriosam error
-                    </p>
-                    <p class="d-inline-flex align-items-center">
-                      <span
-                        class="bg-dark text-white rounded-pill px-2 py-1 small me-2 badge"
-                      >
-                        <strong>Posted on:</strong>
-                        <span class="fw-light">2nd Aug 2025</span>
-                      </span>
-                      <span
-                        class="bg-dark text-white rounded-pill px-2 py-1 small me-2 badge"
-                      >
-                        <strong>Category:</strong>
-                        <span class="fw-light">Tech</span>
-                      </span>
-                      <span
-                        class="bg-dark text-white rounded-pill px-2 py-1 small me-2 badge"
-                      >
-                        <strong>Author:</strong>
-                        <span class="fw-light">My project</span>
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </a>
+            <div>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                nesciunt sapiente quisquam dolorum deleniti
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                nam et laborum minus eos neque in laboriosam error sequi.
+                Dolores at a voluptatum totam nam eligendi iure dicta numquam
+                sit!Quis enim sunt odio architecto suscipit dolores nulla ipsum
+                atque quasi placeat numquam corporis laboriosam vero
+                necessitatibus, ut expedita sed reprehenderit, minus cupiditate.
+                Quod, enim saepe sed omnis facere voluptati
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                quisquam assumenda atque ab quibusdam error asperiores totam
+                quidem! Accusamus possimus nam deserunt, fugiat sunt est
+                accusantium incidunt delectus dicta. Ipsa.Autem voluptates
+                blanditiis cum repellat doloremque error vel molestiae dolorem
+                repellendus similique? Eligendi, officia voluptate voluptas
+                cupiditate a culpa reprehenderit sit aspernatur placeat ducimus
+                optio hic similique nesciunt qui reiciendis.
+              </p>
+            </div>
+
+            <div>
+              <h3>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+                recusandae, omnis cumque at officiis mollitia distinctio quas
+                dolorem. Soluta, provident! Facilis quibusdam ipsum beatae ipsa
+                vitae minima nemo consequuntur tenetur?
+              </h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde
+                laboriosam quaerat dolore similique in qui hic dolores
+                voluptates non adipisci! Aliquid nobis iure aperiam voluptatum
+                odio reprehenderit sed voluptatibus perferendis.Consectetur
+                labore est tempora, quis nisi explicabo, praesentium totam
+                adipisci vel laborum tempore ducimus mollitia possimus fugit
+                repudiandae eaque itaque minus. Accusamus, illo quidem. Velit ex
+                commodi dolor molestias hic?
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+                enim atque ipsum quidem, nobis magnam? Omnis consequatur quas
+                maxime delectus! Assumenda qui animi accusantium eos facere,
+                veniam iure ipsam dolore.Incidunt ea consectetur alias voluptas
+                repellat distinctio qui, rem in tempore odio illum animi
+                suscipit voluptatibus accusantium hic et aliquid laborum earum
+                totam! At sint veniam delectus officia enim facilis.
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
+                eveniet a, delectus itaque officiis illum accusantium non
+                nostrum rem totam placeat hic aperiam, at quidem tempore maiores
+                voluptatibus odio reiciendis!Doloribus maiores, accusamus ipsa
+                cupiditate reiciendis quis at sit voluptatem in, aliquam velit
+                ratione rem eligendi placeat libero facere sunt maxime molestiae
+                cum. Rem voluptatum, dolores accusantium omnis blanditiis atque?
+              </p>
             </div>
           </div>
 
